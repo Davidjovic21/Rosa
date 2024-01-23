@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsivan Sajt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: burlywood;
+      color: azure;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color:azure;
+      padding: 10px;
+      color: black;
+    }
+
+    nav:hover{
+      color: blue;
+    }
+
+    section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: white;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+
+    .content-item img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify; /* Tekst će biti poravnan sa obe strane */
+    }
+
+    /* Dodato za tekst pored poslednje slike */
+    .gas {
+      display: flex;
+      flex-direction: column; /* Promenjeno na column za lepše raspoređivanje */
+      gap: 20px;
+      align-items: flex-start;
+      width: 100%; /* Promenjeno na 100% kako bi zauzeo celu širinu */
+    }
+
+    .par {
+      width: 100%; /* Prilagodite širinu prema potrebama */
+    }
+ 
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <h1>ROSA Vlasina</h1>
+  </header>
+
+  <nav>
+    
+    <a href="index.html">Početna</a>
+    <a href="o nama.html">O nama</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <section>
+    <div class="content">
+      <div class="content-item" id="pocetna">
+        <img src="slike/1628846102-pexels-daria-shevtsova-1458671-1200x800.jpg" alt="Slika 1">
+        <p>Voda je neophodna za pravilno funkcionisanje našeg organizma. Poznato je da voda čini oko 60 odsto telesne mase odraslog čoveka i da je osnovni sastojak svih njegovih ćelija.</p>
+        <p>Sadržaj vode u telu zavisi od godina, pola, konstitucije i telesne mase. Samim tim i dnevne potrebe za njom, koje svako od nas ima, razlikuju se i zavise od fizičke aktivnosti, ishrane, spoljašnje temperature, vlažnosti vazduha i načina odevanja.</p>
+      </div>
+      <div class="sli">
+        <div class="it">
+          <img src="slike/bottle-2032980-1280-315408.jpeg" alt="Slika 2">
+          <p>Da bi svom telu pružila dovoljan unos vode, odrasla osoba dnevno treba da unese oko 2,6 litara vode. Ta količina se ne može obezbediti samo kroz hranu (svežu ili kuvanu), već je potrebno uneti dodatnu količinu vode od oko dva litra. Čak i mala deca (težine oko 10kg), dnevno treba da popiju oko jedan litar vode.</p>
+          <p>Sadržaj vode u telu zavisi od godina, pola, konstitucije i telesne mase. Samim tim i dnevne potrebe za njom, koje svako od nas ima, razlikuju se i zavise od fizičke aktivnosti, ishrane, spoljašnje temperature, vlažnosti vazduha i načina odevanja.</p>
+        </div>
+      </div>
+      <div class="sli1">
+        <div class="gas">
+          <img src="slike/gas.jpg" alt="Slika 1" class="it">
+          <div class="par">
+            <p>
+                Da li ste znali da se voda, po pravilu, pije između obroka (jedan sat pre ili jedan sat posle jela), pre spavanja, svaki put kada osetimo umor, kao i pre, za vreme i posle fizičke aktivnosti? Stručnjaci savetuju da svako jutro na „prazan stomak“ popijemo dve čaše vode i da vodu treba uvek i u svakoj prilici da nosimo sa sobom.
+                
+                Rosa Vlasina niskomineralna negazirana voda će vam biti prijatelj u svakom delu dana i svakoj situaciji.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <video width="90%" height="90%" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#"><img src="slike/facebook-new-2023-icon9594.logowik.com.webp" width="50px" alt="Facebook"></a>
+      <a href="#"><img src="slike/twitter-new-2023-x-logo-white-background-vector_1017-45422.avif" width="50px" alt="Twitter"></a>
+      <a href="#"><img src="slike/modern-badge-logo-instagram-icon_578229-124.avif" alt="Instagram" width="50px"></a>
+    </div>
+  </footer>
+ 
+
+</body>
+</html>
